@@ -7,7 +7,7 @@ import { ArgumentEmptyError } from "./errors/ArgumentEmptyError";
 /**
  * Guard class
  */
-export class Guard {
+export default class Guard {
   /**
    * Checks wether a given argument is undefined or not.
    * @param arg given argument
