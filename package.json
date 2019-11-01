@@ -1,0 +1,33 @@
+{
+  "name": "guardily",
+  "version": "1.0.0",
+  "description": "Guards the parameters of methods",
+  "main": "dist/guard.js",
+  "types": "dist/guard.d.ts",
+  "scripts": {
+    "lint": "eslint guard.js",
+    "test": "tsc && mocha tests/**/*.js --reporter spec",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiLucaci/guardily.git"
+  },
+  "keywords": [
+    "guard",
+    "params"
+  ],
+  "author": "Andrei Lucaci",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AndreiLucaci/guardily/issues"
+  },
+  "homepage": "https://github.com/AndreiLucaci/guardily#readme",
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/mocha": "^5.2.7"
+  }
+}
