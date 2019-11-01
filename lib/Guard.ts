@@ -19,7 +19,7 @@ export default class Guard {
   static argumentNotUndefined(
     arg: any,
     parameterName: string,
-    settings: IGuardSettings = defaultGuardSettings,
+    settings: IGuardSettings,
     message?: string,
     callback?: Function
   ): boolean | IArgumentError {
@@ -136,9 +136,11 @@ export default class Guard {
   private static checkArgument<T extends IArgumentError>(
     condition: () => boolean,
     throwException: Function,
-    settings: IGuardSettings,
+    settings: IGuardSettings = defaultGuardSettings,
     callback?: Function
   ): boolean | T {
+    settings = settings || defaultGuardSettings;
+
     if (condition()) {
       if (!settings.doNotThrow) {
         throwException();
