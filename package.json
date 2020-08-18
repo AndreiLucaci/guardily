@@ -28,6 +28,6 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "@types/mocha": "^5.2.7"
+    "@types/mocha": "^8.0.3"
   }
 }
